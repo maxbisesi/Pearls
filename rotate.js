@@ -24,10 +24,17 @@ console.log('Iterative, x after: ' + x);
 
 console.log('------------------------');
 
-// Reverse
+// Reverse ab ba
 console.log('Reverse, x before: '+x);
 reverseRotate(i,x);
 console.log('Reverse, x after: ' + x);
+
+console.log('------------------------');
+
+// Reverse abc cba
+console.log('Reverse abc, x before: '+x);
+reverseRotate(i,x);
+console.log('Reverse abc, x after: ' + x);
 
 function iterativeRotate(por,arr) {
 
