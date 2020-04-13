@@ -1,0 +1,57 @@
+.tab {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.underwater-container {
+    position: absolute;
+    left:200px;
+    top:30px;
+    height: 600px;
+    width: 1000px;
+    background-color: black;
+    border: 1px solid blue;
+    overflow:hidden;
+}
+
+.underwater-scrolling {
+    background:url(../imgs/space-147x320.png); 
+    width:147px; 
+    height:160px; 
+    position:absolute; 
+    left:50%; 
+    top:120px; 
+    background-position:0px -320px; 
+    z-index:1;
+}
+
+.underwater-layer {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: 'none';
+}
+
+.layer-1 {
+    background-image: url('./layers/1.png');
+}
+
+.layer-2 {
+    background-image: url('./layers/2.png');
+}
+
+.layer-3 {
+    background-image: url('./layers/3.png');
+}
+
+.layer-4 {
+    background-image: url('./layers/4.png');
+}
+
+.layer-5 {
+    background-image: url('./layers/5.png');
+}
