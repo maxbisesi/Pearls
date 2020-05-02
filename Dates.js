@@ -19,23 +19,21 @@
         const datenum = [];
         const tokens = dateVal.split('');
         if(tokens.length !== 10) { throw new Error(' Use 10 charcters.'); }
+
         for(let i = 0; i<10; i++) {
             let num = tokens[i];
             if(num === '-' || num === ','){
                 continue;
             }
-            //num = new Number(num);
-            if(Number(num).isNaN()) {throw new Error(  `${tokens[i]} is not a number. Use a number.` ); }
-            if(Number(num).isInteger() && Number(num).isFinite()) {
-                datenum.push(Number(num));
-                continue;
-            }
-            throw new Error(`Error with ${tokens[i]}`);
+            num = parseInt(num,10);
+            datenum.push(Number(num));
         }
+
         return datenum;
     }
     throw new Error('use strings');
  }
+ 
 
 let a = process.argv[2];
 let b = process.argv[3];
